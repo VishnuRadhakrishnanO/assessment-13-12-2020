@@ -1,0 +1,91 @@
+body {
+    padding: 0 10px;
+  
+}
+
+
+.top_head{
+    font-family: 'Montserrat', sans-serif ;
+    color: rgb(172, 166, 175);
+    padding-right: 50px;
+}
+
+.top_head2{
+   
+   padding-left: 50px;
+   padding-bottom: 5px;
+}
+
+  [class*="col-"] {
+    float: left;
+ 
+  }
+  .wrap{
+    max-width: 500px;
+    width: 100%;
+    background-color: rgb(232, 239, 241);
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.Home_Button{
+    background-color: rgb(86, 136, 245);
+    color:white;
+    
+}
+.hyper{
+    text-decoration: none;
+    color: rgb(86, 136, 245);
+}
+.row2{
+    background-color:rgb(205, 226, 231);
+  border-top: rgb(172, 166, 175);
+ 
+}   
+.head2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 25px;
+    padding-top: 5px;
+
+}
+p{
+    text-align: center;
+    padding:5px;
+}
+.col-s-12{
+    padding-bottom:15px;
+    padding-left: 2px;
+}
+.sign_Button{
+    text-align: center;
+    padding:10px
+}
+
+.sign_Button1{
+    background-color: rgb(6, 126, 6);
+    color:white;
+    border-radius: 5px; 
+    font-size: 15px;
+}
+.sign_Button2{
+    background-color: rgb(86, 136, 245);
+    color:white;
+    border-radius: 5px; 
+    font-size: 15px;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .grd{
+        display:grid;
+        grid-template-columns: 50% 50%;
+    list-style: none ;
+    }
+}
+.sub_para{
+text-align: left;
+}
+.foot{
+    font-size: 10px;
+}

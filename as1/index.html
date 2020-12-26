@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+    <!--external css-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+</head>
+
+
+
+<body>
+<div class="wrap">
+<form action = "confirmation.html" name="myForm"class ="form" onsubmit="return show_alert()" method="post">
+
+<div class="input_filed" >
+<label>Full Name</label>
+
+<i class="fa fa-user fa-lg " aria-hidden="false"></i>&nbsp
+<input id="fn" type="text" class="input"  placeholder="Full Name"
+name="Name" required>
+
+
+</div>
+
+<div class="input_filed">
+    <label>Address Line 1</label>
+    <i class="fa fa-address-book fa-lg" aria-hidden="true"></i>&nbsp
+    <input type="text" class="input" placeholder="Address Line 1"
+    name="add1"  required>
+    
+    </div>
+    
+    <div class="input_filed">
+        <label>Address Line 2</label>
+        <i class="fa fa-address-book fa-lg" aria-hidden="true"></i>&nbsp
+        <input type="text" class="input" placeholder="Address Line 2"
+        name="add2"  required>
+        
+        </div>
+
+        <div class="input_filed">
+            <label>City</label>
+            <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>&nbsp
+            <input type="text" class="input"placeholder="City"
+            name="City"  required>
+            
+            </div>
+
+            <div class="input_filed">
+                <label>State/Province/Region</label>
+                <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>&nbsp
+                <input type="text" class="input"placeholder="State/Province/Region"
+                name="state"  required>
+                
+                </div>
+
+
+                <div class="input_filed">
+                    <label>Postal code/ZIP</label>
+                    <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>&nbsp
+                    <input type="text" class="input"name="ZIP"placeholder="Postal code/ZIP"
+                    name="Post"  required>
+                    
+                    </div>
+
+                    <div class="input_filed">
+                        <label>Country</label>
+                        <i class="fa fa-map fa-lg" aria-hidden="true"></i>&nbsp
+                        <input type="text" class="input" placeholder="Country"
+                        name="Country"  required >
+                        
+                        </div>
+
+
+
+                        <div class="input_filed">
+                            <label>E-mail</label>
+                            <i class="fa fa-address-book fa-lg" aria-hidden="true"></i>&nbsp
+                            <input type="text" class="input"placeholder="E-mail"
+                            name="Email"  required>
+                            
+                            </div>
+                            <div class="input_filed">
+                                <label>Phone Number</label>
+                                <i class="fa fa-address-book fa-lg" aria-hidden="true"></i>&nbsp
+                                <input type="text" class="input"placeholder="Phone Number"
+                                name="Ph"  required>
+                                
+                                </div>
+                                <div class="input_sub">
+                                   
+                    <input id= "submitForm" type="submit" value="submit" class="bt"   >
+                                    
+                                    </div>
+
+</form>
+
+
+
+</div>
+<script>
+     function show_alert() {
+  if( document.myForm.Name.value.length <2 ) {
+            alert( "Please provide your correct name!" );
+            return false;
+         }
+
+        else if( document.myForm.add1.value.length <2 ) {
+            alert( "Please provide correct address!" );
+            return false;
+         }
+         else if( document.myForm.add2.value.length <2 ) {
+            alert( "Please provide correct address!" );
+            return false;
+         }
+         else if( document.myForm.City.value.length <2 ) {
+            alert( "Please provide correct City name!" );
+            return false;
+         }
+         else if( document.myForm.state.value.length <2 ) {
+            alert( "Please provide correct state name!" );
+            return false;
+         }
+         else if( document.myForm.state.value.length <2 ) {
+            alert( "Please provide correct state name!" );
+            return false;
+         }
+      
+         else if( document.myForm.ZIP.value.length <6 ) {
+            alert( "Please provide correct Pin code!" );
+            return false;
+         }
+         else if( document.myForm.Country.value.length <2 ) {
+            alert( "Please provide correct Country name!" );
+            return false;
+         }
+         else if( document.myForm.Email.value.length <5 ) {
+            alert( "Please provide correct Email!" );
+            return false;
+         }
+         else if( document.myForm.Ph.value.length <10 ) {
+            alert( "Please provide correct Phone number!" );
+            return false;
+         }
+
+         
+
+        }
+ </script>
+
+
+</body>
+</html>
